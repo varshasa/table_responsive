@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Users Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>id:</th>
+            <th>
+                Name
+                <button class="sort-button" data-column="1" data-order="asc" onclick="toggleSort(this)">&#8593;</button>
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+                Email
+                <button class="sort-button" data-column="3" data-order="asc" onclick="toggleSort(this)">&#8593;</button>
+            </th>
+            <th>Phone</th>
+            <th>Website</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--to inject rows dynamically -->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
